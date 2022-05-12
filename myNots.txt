@@ -1,0 +1,44 @@
+py -3 -m venv venv
+
+venv\Scripts\activate
+
+pip freeze
+
+python
+
+pip install django
+
+python -m pip install --upgrade pip
+
+(https://www.django-rest-framework.org/)
+
+pip install djangorestframework
+
+pip install --upgrade pip --user
+
+pip freeze > requirements.txt
+
+************************************
+
+django-admin startproject project .
+
+django-admin startapp events
+
+--> Then go to sitting file and register it under: MIDDLEWARE = [] and register 'rest_framework'
+--> in setting file add generic list of settings name it REST_FRAMEWORK = {}
+
+python manage.py migrate
+
+python manage.py makemigrations
+
+python manage.py createsuperuser
+    ENTER USER NAME 
+    ENTER PASSWORD
+
+python manage.py runserver
+
+
+
+
+
+
