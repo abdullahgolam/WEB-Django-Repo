@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 # from datetime import datetime
 
 # Create your models here.
@@ -108,19 +109,28 @@ from django.db import models
 #     def __str__(self):
 #         return self.name
 
+# class Student(models.Model):
+#     name = models.CharField(max_length=30, null=True)
+#     age = models.IntegerField(null=True)
+#     description = models.TextField(null=True)
+
+#     class Meta:
+#         # db_table = 'Student_Table'
+#         # verbose_name = 'Student_Model'
+#         # verbose_name_plural = 'Student'
+
+#         # verbose_name = 'People'
+#         # verbose_name_plural = 'People'
+#         ordering = ['name']
+
+#     def __str__(self):
+#         return self.name
+
+
 class Student(models.Model):
     name = models.CharField(max_length=30, null=True)
-    age = models.IntegerField(null=True)
-    description = models.TextField(null=True)
 
-    class Meta:
-        # db_table = 'Student_Table'
-        # verbose_name = 'Student_Model'
-        # verbose_name_plural = 'Student'
-
-        # verbose_name = 'People'
-        # verbose_name_plural = 'People'
-        ordering = ['name']
+    price = models.IntegerField(null=True)
 
     def __str__(self):
         return self.name

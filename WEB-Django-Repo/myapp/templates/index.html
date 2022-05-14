@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Template Language</title>
+</head>
+<body>
+    {{name}}
+    <br>
+    {{age}}
+    <br>
+    {{dir}}
+    <br>
+    {{ptf}}
+    <br>
+    {{myname|default:'Gholam'}}
+    <br>
+    {{name|length}}
+    <br>
+    {{myname|length}}
+    <br>
+    {{filesize|filesizeformat}}
+    <br>
+    {{addnum|add:5}}
+    <br>
+    {{capfirst|capfirst}}
+    <br>
+    {{cuttext|cut:'o'}}
+    <br>
+    {{cuttext|cut:' '}}
+    <br>
+    {{datetime}}
+    <br>
+    {{datetime|date:'D'}}
+    <br>
+    {{datetime|date:'l'}}
+    <br>
+    {{datetime|date:'d'}}
+    <br>
+    {{datetime|date:'j'}}
+    <br>
+    {{datetime|date:'D d'}}
+    <br>
+    {{datetime|date:'m'}}
+    <br>
+    {{datetime|date:'n'}}
+    <br>
+    {{datetime|date:'M'}}
+    <br>
+    {{datetime|date:'F'}}
+    <br>
+    {{datetime|date:'y'}}
+    <br>
+    {{datetime|date:'Y'}}
+    <br>
+    {{datetime|date:'d/m/Y'}}
+    <br>
+    {{floting|floatformat}}
+    <br>
+    {{upeertext|lower}}
+    <br>
+    {{lowertext|upper}}
+    <br>
+    {{randomnumber|random}}
+    <br>
+    {{sliceany|slice:'2:6'}}
+    <br>
+    {{slugifyany|slugify}}
+</body>
+</html>
