@@ -21,26 +21,26 @@ from datetime import datetime
 # def contact(request):  #www.example.com/contact
 #     return HttpResponse('<h1>Hello From Contact!</h1>')
 
-def home(request):
-    return render(request=request, 
-                    template_name='index.html', 
-                    context={'name':'Abdullah',
-                                'age': 31,
-                                'dir':os.getcwd(),
-                                'ptf': platform.platform,
-                                'myname': '',
-                                'filesize': 12534596557423,
-                                'addnum':5,
-                                'capfirst':"hello",
-                                'cuttext':'hello hello hello',
-                                'datetime': datetime.now,
-                                'floting': 7.900009,
-                                'upeertext': 'ABDULLAH GOLAM',
-                                'lowertext': 'abdullah golam',
-                                'randomnumber': [1, 2, 3, 9, 10, 23, 13],
-                                # we can use slice with list
-                                'sliceany': 'abdullah golam',
-                                'slugifyany': 'abdullah golam'})
-
 # def home(request):
-#     return render(request, 'index.html')
+#     return render(request=request, 
+#                     template_name='index.html', 
+#                     context={'name':'Abdullah',
+#                                 'age': 31,
+#                                 'dir':os.getcwd(),
+#                                 'ptf': platform.platform,
+#                                 'myname': '',
+#                                 'filesize': 12534596557423,
+#                                 'addnum':5,
+#                                 'capfirst':"hello",
+#                                 'cuttext':'hello hello hello',
+#                                 'datetime': datetime.now,
+#                                 'floting': 7.900009,
+#                                 'upeertext': 'ABDULLAH GOLAM',
+#                                 'lowertext': 'abdullah golam',
+#                                 'randomnumber': [1, 2, 3, 9, 10, 23, 13],
+#                                 # we can use slice with list
+#                                 'sliceany': 'abdullah golam',
+#                                 'slugifyany': 'abdullah golam'})
+
+def home(request):
+    return render(request, 'myapp/home.html')
