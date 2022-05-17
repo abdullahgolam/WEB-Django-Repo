@@ -15,3 +15,9 @@ from myapp import models
 # admin.site.register(models.Store)
 
 admin.site.register(models.Student)
+
+admin.site.register(models.Language)
+admin.site.register(models.Framework)
+
+admin.site.register(models.Movie)
+admin.site.register(models.Character)
